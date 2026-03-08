@@ -22,25 +22,25 @@ public class Animal {
 
     }
 
-    public void getNom(){
+    public String getNom(){
         return this.nom;
     }
-    public void getType(){
+    public AnimalType getType(){
         return this.type;
     }
-    public void getSanity(){
-        returnthis.sanity;
+    public int getSanity(){
+        return this.sanity;
     }
-    public void getFaim(){
+    public int getFaim(){
         return this.faim;
     }
-    public void getEnergie(){
+    public int getEnergie(){
         return this.energie;
     }
-    public void getBonheur(){
+    public int getBonheur(){
         return this.bonheur;
     }
-    public void getAge(){
+    public int getAge(){
         return this.age;
     }
     public void setNom(String newName){
