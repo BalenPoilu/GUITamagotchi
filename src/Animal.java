@@ -1,5 +1,7 @@
 package tama;
 
+import java.util.concurrent.ThreadLocalRandom;
+
 public class Animal {
     private String nom;
     private AnimalType type;
@@ -62,7 +64,12 @@ public class Animal {
         this.age = newValue;
     }
 
-
-
+    public String toString(){
+        return this.getType() +""+ this.getNom() +""+this.getSanity()+""+this.getFaim()+""+this.getEnergie()+""+this.getBonheur()+""+this.getAge();
+    }
+    public int rand(int min, int max) {
+        return ThreadLocalRandom.current().nextInt(min, max + 1);
+    }
 
 }
+
