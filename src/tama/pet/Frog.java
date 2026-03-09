@@ -1,4 +1,4 @@
-package tama;
+package tama.pet;
 
 public class Frog extends Animal{
 
@@ -14,6 +14,7 @@ public class Frog extends Animal{
         } else System.out.println(this.getNom() +"rate mouche"+this.getFaim() +' '+getBonheur());
 
     }
+
     public boolean aPeur(String raison, int n){
         int d = this.rand(1, 10);
         if(d < n){
