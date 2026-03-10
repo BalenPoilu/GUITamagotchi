@@ -23,7 +23,24 @@ public class Main {
 
         maGrenouille.mangerMouche();
 
-        new Window("test");
+        Window win = new Window("test");
 
+
+
+        Runnable task = new Runnable() {
+            public void run() {
+                while(true){
+                    System.out.println(win.getSize());
+                    try {
+                        Thread.sleep(500);
+                    } catch (InterruptedException e){
+                        return;
+                    }
+                }
+            }
+        };
+        Thread thread = new Thread(task);
+            thread.start();
     }
 }
+
