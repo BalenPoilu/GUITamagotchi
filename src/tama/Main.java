@@ -2,6 +2,7 @@ package tama;
 
 import tama.pet.Frog;
 import tama.food.GummieType;
+import tama.win.Window;
 
 public class Main {
     public static void main(String[] args) {
@@ -21,5 +22,8 @@ public class Main {
         System.out.println(maGrenouille);
 
         maGrenouille.mangerMouche();
+
+        new Window("test");
+
     }
 }
